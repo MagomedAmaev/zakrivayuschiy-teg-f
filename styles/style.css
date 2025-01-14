@@ -325,10 +325,13 @@
 .floppy__svg {
   color: var(--focus__text-color);
   mix-blend-mode: difference;
-  inline-size: calc(3.0629999999999997rem - clamp(1.313rem, 1.1591rem + 0.6565vw, 1.75rem));
-  block-size: calc(3.0629999999999997rem - clamp(1.313rem, 1.1591rem + 0.6565vw, 1.75rem));
+  inline-size: calc(
+    3.0629999999999997rem - clamp(1.313rem, 1.1591rem + 0.6565vw, 1.75rem)
+  );
+  block-size: calc(
+    3.0629999999999997rem - clamp(1.313rem, 1.1591rem + 0.6565vw, 1.75rem)
+  );
 }
-
 
 .footer__button-text {
   font-family: var(--accent-font), sans-serif;
@@ -384,5 +387,3 @@ dialog::backdrop {
   line-height: 12.6px;
   text-transform: uppercase;
 }
-
-
