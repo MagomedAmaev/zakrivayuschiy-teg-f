@@ -123,7 +123,7 @@
   position: absolute;
   z-index: 1;
   top: 25px;
-  right: 25px;
+  right: clamp(0.813rem, 0.5489rem + 1.1268vw, 1.563rem);
   font-family: var(--accent-font), fantasy;
   font-size: 14px;
   font-weight: 400;
@@ -301,8 +301,7 @@
 }
 
 .footer__button {
-  border: none;
-  outline: 2px solid #000;
+  border: 2px solid #000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -336,6 +335,7 @@
 .dialog[open] {
   inline-size: clamp(21.313rem, 21.0489rem + 1.1268vw, 22.063rem);
   padding-top: 30px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
